@@ -49,6 +49,9 @@ Tanh output layer
 Output
 Synthetic defect image for selected class.
 
+<img width="638" height="511" alt="image" src="https://github.com/user-attachments/assets/bc8b6788-b678-403f-a790-baafee52cca4" />
+
+
 **Module 3 — Discriminator Network**
 The Discriminator evaluates real vs fake images conditioned on labels.
 Architecture
