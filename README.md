@@ -34,6 +34,24 @@ Create batches using TensorFlow / PyTorch DataLoader
 Purpose
 Prepare clean, label-aware, standardized images for stable conditional GAN training.
 
+**How the Dataset Works in the Project**
+1.Dataset Loading
+The images are loaded from the dataset folders using ImageDataGenerator.
+2.Preprocessing
+Images are resized to 128 × 128
+Pixel values are normalized to [-1, 1]
+3.Training the GAN
+Real images from the dataset are given to the discriminator.
+The generator learns the patterns of defects from these images.
+4.Learning Defect Patterns
+The model learns features such as:
+texture
+crack shapes
+scratch patterns
+defect structures
+5.Synthetic Image Generation
+After training, the generator can create new realistic defect images similar to those in the dataset.
+
 **Module 2 — Conditional Generator Network**
 The Generator creates defect images based on noise + class label.
 Architecture
